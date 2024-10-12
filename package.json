@@ -1,0 +1,19 @@
+{
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "type": "module",
+  "name": "hristiyan-ivanov-nemetscheck-rise-2024",
+  "version": "1.0.0",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.18.2",
+    "readline-sync": "^1.4.10",
+    "websocket": "^1.0.34",
+    "ws": "^8.16.0"
+  }
+}

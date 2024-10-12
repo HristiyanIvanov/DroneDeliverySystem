@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Drone Delivery Management</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Drone Delivery Management</h1>
+
+      <section id="addOrder">
+        <h2>Add New Order</h2>
+        <label for="customerIdInput">Customer ID:</label>
+        <input type="text" id="customerIdInput" />
+        <button onclick="openAddOrderPopup()">Add Order</button>
+      </section>
+
+      <div id="addOrderPopup" class="popup">
+        <span class="close" onclick="closeAddOrderPopup()">&times;</span>
+        <h2>Add New Order</h2>
+        <label for="numOfProducts">Number of Products:</label>
+        <input type="number" id="numOfProducts" />
+        <div id="productDetails"></div>
+        <button onclick="addProductInput()">Add Product</button>
+        <button onclick="saveOrder()">Send New Order</button>
+        <button onclick="closeAddOrderPopup()">Close</button>
+      </div>
+
+      <section id="orderStatus">
+        <h2>Order Status</h2>
+        <button onclick="showOrderStatus()">Show Status</button>
+        <div id="statusOutput"></div>
+      </section>
+    </div>
+
+    <script src="client.js" defer></script>
+  </body>
+</html>
